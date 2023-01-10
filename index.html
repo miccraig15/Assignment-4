@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Launch Checklist</title>
+        <link rel = "stylesheet" type = "text/css" href = "styles.css" />
+        <script src = "script.js"></script>
+    </head>
+    <body>
+        <h1>Launch Checklist Form</h1>
+        <div id="missionTarget">
+            <!-- Fetch some planetary data -->
+        </div> 
+        
+        <form id="launchForm">
+            <div class="form-group">
+                <label>Pilot Name 
+                  <input id="pilotName" type="text" name="pilotName"/>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>Co-pilot Name 
+                  <input id="copilotName" type="text" name="copilotName"/>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>Fuel Level (L) 
+                  <input id="fuelLevel" type="text" name="fuelLevel"/>
+                </label> 
+            </div>
+            <div class="form-group">
+                <label>Cargo Mass (kg) 
+                  <input id="cargoMass" type="text" name="cargoMass"/>
+                </label>
+            </div>
+            <button id="submitButton">Submit</button>
+        </form>
+
+        <div id="launchStatusCheck">
+            <h2 id="launchStatus">Awaiting Information Before Launch</h2>
+              <ul id="itemStatus">
+                  <li id="pilotStatus"></li>
+                  <li id="copilotStatus"></li>
+                  <li id="fuelStatus"></li>
+                  <li id="cargoStatus"></li>
+              </ul>
+        </div>
+
+    </body>
+</html>
